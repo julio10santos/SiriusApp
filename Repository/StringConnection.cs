@@ -9,7 +9,7 @@ namespace Repository
 {
     public class StringConnection
     {
-        public static    string ConnectionApp
+        public static string ConnectionApp
         {
             get
             {

@@ -11,7 +11,7 @@ namespace Repository
     public class LoginRepository
     {
         private NpgsqlConnection cn;
-        
+
         public UsuarioDomain ValidaUsuarioRepository(UsuarioDomain usuario)
         {
             var usuarioLogado = new UsuarioDomain();
@@ -60,17 +60,22 @@ namespace Repository
                         usuarioLogado.Confirm_token = Convert.ToString(dr[14]);
                     if (!dr.IsDBNull(15))
                         usuarioLogado.Plan = Convert.ToString(dr[15]);
+
+                    return usuarioLogado;
                 }
-                
+                else
+                {
+                    return null;
+                }
             }
-            catch (NpgsqlException ex) {
+            catch (NpgsqlException ex)
+            {
                 throw ex;
             }
             finally
             {
                 cn.Close();
             }
-            return usuarioLogado;
         }
 
         public bool AddUsuario(UsuarioDomain usuario)
@@ -101,15 +106,16 @@ namespace Repository
                 cmd.Parameters.AddWithValue("@plan", usuario.Plan);
                 cn.Open();
                 int codigo = cmd.ExecuteNonQuery();
-                if(codigo == -1){
+                if (codigo == -1)
+                {
                     status = false;
                 }
-                else 
+                else
                 {
                     status = true;
                 }
             }
-            catch(NpgsqlException ex)
+            catch (NpgsqlException ex)
             {
                 throw ex;
             }

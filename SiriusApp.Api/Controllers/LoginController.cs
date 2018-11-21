@@ -28,7 +28,15 @@ namespace SiriusApp.Api.Controllers
             {
                 var usuario = Mapper.Map<UsuarioModel, UsuarioDomain>(user);
                 var usuariologado = new UsuarioServices().ValidaAcessoServices(usuario);
-                return Request.CreateResponse(HttpStatusCode.OK, usuariologado);
+                if(usuariologado == null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.Unauthorized, "Usuário ou senha inválidos!");
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, usuariologado);
+                }
+                
             }
             catch (Exception ex)
             {
