@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiriusApp.Api", "SiriusApp.Api\SiriusApp.Api.csproj", "{748A9A1D-489D-4749-AA00-EF6C96AB89F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sirius.Domain", "Sirius.Domain", "{078C2F63-5496-44B9-93C7-C0888A325482}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sirius.Services", "Sirius.Services", "{CB75DA6B-4C48-4D3E-BEBC-25C6C4DDB35F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sirius.Data", "Sirius.Data", "{BBD9D345-6346-47D0-B5EF-1E504EAFDD2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sirius.Api", "Sirius.Api", "{98D24E66-B0D3-4726-81B8-1D364911CF77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{C02ACBAF-D25F-4084-9EEF-186EFD591EDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{EDCA5D1E-D652-4D0F-8463-159BF5A03C95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sirius.Repository", "Sirius.Repository", "{B8B9EDC8-BB00-475A-B9F3-564E7F9BCF8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{616701BC-B6E3-4DA4-8AB0-CC9E05265D61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{748A9A1D-489D-4749-AA00-EF6C96AB89F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{748A9A1D-489D-4749-AA00-EF6C96AB89F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{748A9A1D-489D-4749-AA00-EF6C96AB89F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{748A9A1D-489D-4749-AA00-EF6C96AB89F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C02ACBAF-D25F-4084-9EEF-186EFD591EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C02ACBAF-D25F-4084-9EEF-186EFD591EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C02ACBAF-D25F-4084-9EEF-186EFD591EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C02ACBAF-D25F-4084-9EEF-186EFD591EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDCA5D1E-D652-4D0F-8463-159BF5A03C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDCA5D1E-D652-4D0F-8463-159BF5A03C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDCA5D1E-D652-4D0F-8463-159BF5A03C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDCA5D1E-D652-4D0F-8463-159BF5A03C95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616701BC-B6E3-4DA4-8AB0-CC9E05265D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616701BC-B6E3-4DA4-8AB0-CC9E05265D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616701BC-B6E3-4DA4-8AB0-CC9E05265D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616701BC-B6E3-4DA4-8AB0-CC9E05265D61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{748A9A1D-489D-4749-AA00-EF6C96AB89F3} = {98D24E66-B0D3-4726-81B8-1D364911CF77}
+		{C02ACBAF-D25F-4084-9EEF-186EFD591EDB} = {CB75DA6B-4C48-4D3E-BEBC-25C6C4DDB35F}
+		{EDCA5D1E-D652-4D0F-8463-159BF5A03C95} = {078C2F63-5496-44B9-93C7-C0888A325482}
+		{B8B9EDC8-BB00-475A-B9F3-564E7F9BCF8B} = {BBD9D345-6346-47D0-B5EF-1E504EAFDD2B}
+		{616701BC-B6E3-4DA4-8AB0-CC9E05265D61} = {B8B9EDC8-BB00-475A-B9F3-564E7F9BCF8B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49924750-2FE8-4B1C-922B-EA67E19EEEF1}
+	EndGlobalSection
+EndGlobal

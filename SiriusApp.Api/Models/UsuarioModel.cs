@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace SiriusApp.Api.Models
+{
+    public class UsuarioModel
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Username { get; set; }
+        public string Email { get; set; }
+        public string Password_digest { get; set; }
+        public string Photo { get; set; }
+        public string Description { get; set; }
+        public int Client_id { get; set; }
+        public int Supervisor_id { get; set; }
+        public string Phone_number { get; set; }
+        public DateTime Created_at { get; set; }
+        public DateTime Updated_at { get; set; }
+        public string Reset_token { get; set; }
+        public bool Active { get; set; }
+        public string Confirm_token { get; set; }
+        public string Plan { get; set; }
+    }
+}
