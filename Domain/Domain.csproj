@@ -46,6 +46,7 @@
     <Compile Include="entities\AuthorizationsDomain.cs" />
     <Compile Include="entities\ClienteDomain.cs" />
     <Compile Include="entities\ClienteDominioDomain.cs" />
+    <Compile Include="entities\ContatosDomain.cs" />
     <Compile Include="entities\GroupsDomain.cs" />
     <Compile Include="entities\GrupoUsuarioDomain.cs" />
     <Compile Include="entities\MensagemDomain.cs" />
